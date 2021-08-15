@@ -1,0 +1,87 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+
+
+body{
+    background-image: url(img/bg.jpg);
+    min-height: 100vh;
+    background-size: 103vw 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Press Start 2P';
+}
+h1{
+    margin: 1.2rem;
+    font-size: 4rem;
+}
+button{
+    display: block;
+    padding: 10px 30px;
+    margin: 10px;
+    font-size: 1.2rem;
+    border-radius: 30px;
+    border:2px solid rgb(136, 255, 0);
+    cursor: pointer;
+    background-image: linear-gradient(rgb(131, 224, 131),yellow);
+    transition: all 0.50s
+}
+button:hover{
+    transform: scale(1.2);
+}
+
+#gameOver , #gamepause, #startbox{
+    border: 2px solid yellow;
+    border-radius: 10px;
+    height: 400px;
+    width: 600px;
+    background-color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    position: absolute;
+    top:136px;
+    left:463px;
+    box-shadow: 0 0 20px white;
+    background-color: rgb(64, 255, 0);
+}
+
+
+
+#scorebox{
+    text-align: center;
+    color:white;
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+}
+
+.board{
+    height: 640px;
+    width: 640px;
+    background: linear-gradient(rgb(191, 255, 191), rgb(255, 249, 162));
+    border: 5px solid brown;
+    display: grid;
+    grid-template-columns: repeat(21,2fr);
+    grid-template-rows: repeat(21,2fr);
+}
+
+.head{
+    background: linear-gradient(rgb(206, 144, 206),rgb(202, 164, 164));
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 8px;
+}
+.food{
+    background-color:rgb(255, 0, 0);
+    border-radius: 100%;
+}
+.tail{
+    background-color: rgb(214, 115, 115);
+    border: 2px solid white;
+    border-radius:8px;
+}
